@@ -31,6 +31,7 @@
       "inline": [
         "sleep 30",
         "sudo yum update -y"
+        "sudo amazon-linux-extras install nginx1"
         "sudo yum install nginx -y"
      ]
     }]
