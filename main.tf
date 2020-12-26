@@ -5,3 +5,10 @@ provider "aws" {
     region = "${var.aws_region}"
 }
 
+terraform {
+  backend "s3" {
+    bucket = "sagar1terraformbucket"
+    key    = "jenkinsmyterraform.tfstate"
+    region = "us-east-1"
+}
+}
