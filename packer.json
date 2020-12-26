@@ -25,6 +25,13 @@
       "tags": {
         "Name": "DevOpsClass-Build-{{isotime | clean_resource_name}}"
       }
+    }],
+    "provisioners": [{
+      "type": "shell",
+      "inline": [
+        "sleep 30",
+        "sudo yum update -y",
+		 ]
     }]
     
   }
